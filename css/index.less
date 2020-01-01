@@ -246,13 +246,13 @@ html {
         h3 {
         font-size: 15rem/100;
         line-height: 50rem/100;
-        padding-left: 20rem/100;
+        padding-left: 28rem/100;
         }
 
         i {
             position: absolute;
             top: 12rem/100;
-            left: 6rem/100;
+            left: 10rem/100;
             width: 24rem/100;
             height: 24rem/100;
             .channel-icon();
@@ -420,6 +420,11 @@ html {
     .icon-bg();
     background-position: 0 0;
 }
+// 付费
+.c-icon-Pay {
+    .icon-bg();
+    background-position: -80rem/100 -20rem/100;
+}
 // 查看更多-两列
 .box-more-2 {
     width: 100%;
@@ -554,6 +559,51 @@ html {
 
         &:nth-child(6) a {
             background-image: url(../upload/tvplay_6.webp);
+        }
+    }
+}
+// 电影
+.film {
+    width: 100%;
+    background-color: #fff;
+    .box-list-3();
+
+    .box-title i {
+        background-position: -48rem/100 0;
+    }
+
+    li {
+        a {
+            height: 165rem/100;
+        }
+
+        .c-rb {
+            color: #ff6e0d;
+            font-size: 12rem/100;
+        }
+
+        &:nth-child(1) a {
+            background-image: url(../upload/film_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/film_2.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/film_3.webp);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/film_4.webp);
+        }
+
+        &:nth-child(5) a {
+            background-image: url(../upload/film_5.webp);
+        }
+
+        &:nth-child(6) a {
+            background-image: url(../upload/film_6.webp);
         }
     }
 }

@@ -204,12 +204,12 @@ html {
 .box-title a h3 {
   font-size: 0.15rem;
   line-height: 0.5rem;
-  padding-left: 0.2rem;
+  padding-left: 0.28rem;
 }
 .box-title a i {
   position: absolute;
   top: 0.12rem;
-  left: 0.06rem;
+  left: 0.1rem;
   width: 0.24rem;
   height: 0.24rem;
   background-image: url(../images/channel-icon.png);
@@ -315,6 +315,11 @@ html {
   background-image: url(../images/picicon-bg.png);
   background-size: 1.7rem 1.6rem;
   background-position: 0 0;
+}
+.c-icon-Pay {
+  background-image: url(../images/picicon-bg.png);
+  background-size: 1.7rem 1.6rem;
+  background-position: -0.8rem -0.2rem;
 }
 .box-more-2 {
   width: 100%;
@@ -469,4 +474,50 @@ html {
 }
 .tvplay li:nth-child(6) a {
   background-image: url(../upload/tvplay_6.webp);
+}
+.film {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #f7f7f7;
+}
+.film ul:after,
+.film ul:before {
+  content: "";
+  display: table;
+}
+.film ul:after {
+  clear: both;
+}
+.film li {
+  float: left;
+  width: 33%;
+  padding-right: 0.3%;
+}
+.film .box-title i {
+  background-position: -0.48rem 0;
+}
+.film li a {
+  height: 1.65rem;
+}
+.film li .c-rb {
+  color: #ff6e0d;
+  font-size: 0.12rem;
+}
+.film li:nth-child(1) a {
+  background-image: url(../upload/film_1.webp);
+}
+.film li:nth-child(2) a {
+  background-image: url(../upload/film_2.webp);
+}
+.film li:nth-child(3) a {
+  background-image: url(../upload/film_3.webp);
+}
+.film li:nth-child(4) a {
+  background-image: url(../upload/film_4.webp);
+}
+.film li:nth-child(5) a {
+  background-image: url(../upload/film_5.webp);
+}
+.film li:nth-child(6) a {
+  background-image: url(../upload/film_6.webp);
 }
