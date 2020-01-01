@@ -188,16 +188,54 @@ html {
 .app .ad img {
   width: 100%;
 }
+.box-title {
+  width: 100%;
+  height: 0.5rem;
+}
+.box-title a {
+  display: block;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0.12rem;
+  color: #333;
+  background-color: #fff;
+}
+.box-title a h3 {
+  font-size: 0.15rem;
+  line-height: 0.5rem;
+  padding-left: 0.2rem;
+}
+.box-title a i {
+  position: absolute;
+  top: 0.12rem;
+  left: 0.06rem;
+  width: 0.24rem;
+  height: 0.24rem;
+  background-image: url(../images/channel-icon.png);
+  background-size: 1.44rem 1.44rem;
+}
+.box-content {
+  width: 100%;
+  background-color: #fff;
+}
+.box-content a {
+  color: #333;
+  font-size: 0.14rem;
+}
+.box-content h3 {
+  margin-bottom: 0;
+}
 .box-list > li {
   width: 100%;
-  height: 1.62rem;
   background-color: #fff;
 }
 .box-list a {
   position: relative;
   display: block;
   width: 100%;
-  height: 1.04rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .box-list a:after {
   content: "";
@@ -263,15 +301,20 @@ html {
   font-size: 0.12rem;
   color: #999;
 }
-.c-picicon-vip {
+.c-icon-vip {
   background-image: url(../images/picicon-bg.png);
   background-size: 1.7rem 1.6rem;
   background-position: -0.4rem 0;
 }
-.c-picicon-self {
+.c-icon-self {
   background-image: url(../images/picicon-bg.png);
   background-size: 1.7rem 1.6rem;
   background-position: -0.8rem 0;
+}
+.c-icon-onlyPlay {
+  background-image: url(../images/picicon-bg.png);
+  background-size: 1.7rem 1.6rem;
+  background-position: 0 0;
 }
 .box-more-2 {
   width: 100%;
@@ -320,10 +363,9 @@ html {
   float: left;
   width: 49.9%;
   padding-right: 0.1%;
-  background-color: #fff;
 }
 .pic li a {
-  background-size: 100%;
+  height: 1.04rem;
 }
 .pic li:nth-child(1) a {
   background-image: url(../upload/pic-list_1.jpg);
@@ -336,6 +378,9 @@ html {
 }
 .pic li:nth-child(4) a {
   background-image: url(../upload/pic-list_4.jpg);
+}
+.pic .title {
+  padding-bottom: 0.16rem;
 }
 .infor-content {
   background-color: #fff;
@@ -354,57 +399,9 @@ html {
   float: left;
   width: 49.9%;
   padding-right: 0.1%;
-  background-color: #fff;
 }
-.infor-content li a {
-  background-size: 100%;
-}
-.infor-content li {
-  height: 1.44rem;
-}
-.infor-content li:nth-child(1) a {
-  background-image: url(../upload/infor_1.jpg);
-}
-.infor-content li:nth-child(2) a {
-  background-image: url(../upload/infor_2.jpg);
-}
-.infor-content .title {
-  padding-bottom: 0;
-}
-.infor-content .title h3 {
-  margin-bottom: 0;
-}
-.infor-title {
-  width: 100%;
-  height: 0.5rem;
-}
-.infor-title a {
-  display: block;
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0 0.12rem;
-  color: #333;
-  background-color: #fff;
-}
-.infor-title a h3 {
-  font-size: 0.15rem;
-  line-height: 0.5rem;
-  padding-left: 0.2rem;
-}
-.infor-title a i {
-  position: absolute;
-  top: 0.12rem;
-  left: 0.06rem;
-  width: 0.24rem;
-  height: 0.24rem;
-  background-image: url(../images/channel-icon.png);
-  background-size: 1.44rem 1.44rem;
+.infor-content .box-title i {
   background-position: 0 0;
-}
-.infor-content {
-  width: 100%;
-  background-color: #fff;
 }
 .infor-content > a {
   display: block;
@@ -421,4 +418,55 @@ html {
   background-image: url(../images/channel-icon.png);
   background-size: 1.44rem 1.44rem;
   background-position: -0.5rem -1rem;
+}
+.infor-content li a {
+  height: 1.04rem;
+}
+.infor-content li:nth-child(1) a {
+  background-image: url(../upload/infor_1.jpg);
+}
+.infor-content li:nth-child(2) a {
+  background-image: url(../upload/infor_2.jpg);
+}
+.tvplay {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #f7f7f7;
+}
+.tvplay ul:after,
+.tvplay ul:before {
+  content: "";
+  display: table;
+}
+.tvplay ul:after {
+  clear: both;
+}
+.tvplay li {
+  float: left;
+  width: 33%;
+  padding-right: 0.3%;
+}
+.tvplay .box-title i {
+  background-position: -0.24rem 0;
+}
+.tvplay li a {
+  height: 1.65rem;
+}
+.tvplay li:nth-child(1) a {
+  background-image: url(../upload/tvplay_1.webp);
+}
+.tvplay li:nth-child(2) a {
+  background-image: url(../upload/tvplay_2.webp);
+}
+.tvplay li:nth-child(3) a {
+  background-image: url(../upload/tvplay_3.webp);
+}
+.tvplay li:nth-child(4) a {
+  background-image: url(../upload/tvplay_4.webp);
+}
+.tvplay li:nth-child(5) a {
+  background-image: url(../upload/tvplay_5.webp);
+}
+.tvplay li:nth-child(6) a {
+  background-image: url(../upload/tvplay_6.webp);
 }

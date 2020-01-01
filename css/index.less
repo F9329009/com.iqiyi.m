@@ -197,13 +197,13 @@ html {
     height: 10000px;
     padding-top: 126rem/100;
     background-color: #ccc;
-
+    // 轮播图
     .carousel {
         width: 100%;
         height: 182rem/100;
         background-color: #aaa;
     }
-
+    // 广告
     .ad {
         display: block;
         width: 100%;
@@ -229,10 +229,56 @@ html {
         clear: both;
     }
 }
-// 两列
+// 盒子标题
+.box-title {
+    width: 100%;
+    height: 50rem/100;
+
+    a {
+        display: block;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 12rem/100;
+        color: #333;
+        background-color: #fff;
+
+        h3 {
+        font-size: 15rem/100;
+        line-height: 50rem/100;
+        padding-left: 20rem/100;
+        }
+
+        i {
+            position: absolute;
+            top: 12rem/100;
+            left: 6rem/100;
+            width: 24rem/100;
+            height: 24rem/100;
+            .channel-icon();
+            // background-position: 0 0;
+        }
+    }
+}
+// 盒子内容结构
+.box-content {
+    width: 100%;
+    background-color: #fff;
+
+    a {
+        color: #333;
+        font-size: 14rem/100;
+    }
+    
+    h3 {
+        margin-bottom: 0;
+    }
+}
+// 盒子内容-两列
 .box-list-2() {
     width: 100%;
     border-bottom: 1px solid #f7f7f7;
+
     ul {
         .clearfix();
     }
@@ -241,31 +287,26 @@ html {
         float: left;
         width: 49.9%;
         padding-right: 0.1%;
-        background-color: #fff;
-
-        a {
-            background-size: 100%;
-        }
     }
 }
-// 三列
-.box-list-3() {
+// 盒子内容-三列
+.box-list-3() { 
     width: 100%;
     border-bottom: 1px solid #f7f7f7;
+
+    ul {
+        .clearfix();
+    }
 
     li {
         float: left;
         width: 33%;
         padding-right: 0.3%;
-        background-color: #fff;
-
-        a {
-            background-size: 100%;
-        }
     }
+    
 }
 // 引入精灵图
-.picicon-bg() {
+.icon-bg() {
     background-image: url(../images/picicon-bg.png);
     background-size: 510rem/100/3 480rem/100/3;
 }
@@ -278,7 +319,6 @@ html {
 .box-list {
     >li {
     width: 100%;
-    height: 162rem/100;
     background-color: #fff;
     }
 
@@ -286,7 +326,8 @@ html {
         position: relative;
         display: block;
         width: 100%;
-        height: 104rem/100;
+        background-size: 100%;
+        background-repeat: no-repeat;
 
         &:after {
             content: "";
@@ -364,16 +405,22 @@ html {
     }
 }
 // 小图标
-.c-picicon-vip {
-    .picicon-bg();
+// vip
+.c-icon-vip {
+    .icon-bg();
     background-position: -40rem/100 0;
 }
-
-.c-picicon-self {
-    .picicon-bg();
+// 自制
+.c-icon-self {
+    .icon-bg();
     background-position: -80rem/100 0;
 }
-// 更多-2
+// 独播
+.c-icon-onlyPlay {
+    .icon-bg();
+    background-position: 0 0;
+}
+// 查看更多-两列
 .box-more-2 {
     width: 100%;
     text-align: center;
@@ -400,13 +447,17 @@ html {
         }
     }
 }
-
+// 推荐
 .pic {
     width: 100%;
     background-color: #fff;
     .box-list-2();
 
     li {
+        a {
+            height: 104rem/100;
+        }
+
         &:nth-child(1) a {
             background-image: url(../upload/pic-list_1.jpg);
         }
@@ -420,68 +471,20 @@ html {
             background-image: url(../upload/pic-list_4.jpg);
         }
     }
-}
 
+    .title {
+        padding-bottom: 16rem/100;
+    }
+}
+// 今日资讯
 .infor-content {
     width: 100%;
     background-color: #fff;
     .box-list-2();
 
-    li {
-        height: 144rem/100;
-        &:nth-child(1) a {
-            background-image: url(../upload/infor_1.jpg);
-        }
-
-        &:nth-child(2) a {
-            background-image: url(../upload/infor_2.jpg);
-        }
+    .box-title i {
+        background-position: 0 0;
     }
-
-    .title {
-        padding-bottom: 0;
-
-        h3 {
-            margin-bottom: 0;
-        }
-    }
-}
-
-.infor-title {
-    width: 100%;
-    height: 50rem/100;
-
-    a {
-        display: block;
-        position: relative;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0 12rem/100;
-        color: #333;
-        background-color: #fff;
-
-        h3 {
-        font-size: 15rem/100;
-        line-height: 50rem/100;
-        padding-left: 20rem/100;
-        }
-
-        i {
-            position: absolute;
-            top: 12rem/100;
-            left: 6rem/100;
-            width: 24rem/100;
-            height: 24rem/100;
-            .channel-icon();
-            background-position: 0 0;
-        }
-    }
-}
-
-.infor-content {
-    width: 100%;
-    // padding: 0 8rem/100;
-    background-color: #fff;
 
     >a {
         display: block;
@@ -497,6 +500,60 @@ html {
             height: 24rem/100;
             .channel-icon();
             background-position: -50rem/100 -100rem/100;
+        }
+    }
+
+    li {
+        a {
+            height: 104rem/100;
+        }
+
+        &:nth-child(1) a {
+            background-image: url(../upload/infor_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/infor_2.jpg);
+        }
+    }
+}
+// 电视剧
+.tvplay {
+    width: 100%;
+    background-color: #fff;
+    .box-list-3();
+
+    .box-title i {
+        background-position: -24rem/100 0;
+    }
+
+    li {
+        a {
+            height: 165rem/100;
+        }
+
+        &:nth-child(1) a {
+            background-image: url(../upload/tvplay_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/tvplay_2.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/tvplay_3.webp);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/tvplay_4.webp);
+        }
+
+        &:nth-child(5) a {
+            background-image: url(../upload/tvplay_5.webp);
+        }
+
+        &:nth-child(6) a {
+            background-image: url(../upload/tvplay_6.webp);
         }
     }
 }
