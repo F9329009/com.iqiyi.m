@@ -7,7 +7,7 @@ html {
         font-size: 26.66666667vw;
     }
 }
-
+// 固定头部
 .header-top {
     position: fixed;
     top: 0;
@@ -69,20 +69,22 @@ html {
     }
 
 }
-
+// 固定头部导航
 .header-nav {
     position: fixed;
     left: 0;
     top: 44rem/100;
     z-index: 10;
-    width: 100%;
-    height: 40rem/100;
+    width: 90%;
     border-bottom: 1px solid #e6e6e6;
     background-color: #fafafa;
 
+    /* 禁止文本换行 */
+    white-space: nowrap;
+    /* 裁剪内容 - 提供滚动机制 */
+    overflow-x: scroll;
+
     ul {
-        width: 1000%;
-        padding-right: 40rem/100;
         box-sizing: border-box;
 
         li {
@@ -115,31 +117,38 @@ html {
     }
 
     .header-nav-linkmore {
-        position: absolute;
-        top: 0;
+        position: fixed;
+        top: 44rem/100;
         right: 0;
-        display: block;
         width: 40rem/100;
-        height: 100%;
-        background-color: #fafafa;
-
-        i {
+        height: 41rem/100;
+        border-bottom: 1px solid #e6e6e6;
+        
+        a {
+            position: relative;
             display: block;
             width: 100%;
             height: 100%;
-            background-image: url(../images/menu-more-icon.png);
-            background-position: 0 0;
-            background-size: 200% 100%;
+            background-color: #fafafa;
 
-            &:after {
-                content: "";
-                position: absolute;
-                left: -6rem/100;
-                top: 0;
-                width: 6rem/100;
+            i {
+                display: block;
+                width: 100%;
                 height: 100%;
-                background-image: url(../images/nav-linebg.png);
-                background-size: 6rem/100 40rem/100;
+                background-image: url(../images/menu-more-icon.png);
+                background-position: 0 0;
+                background-size: 200% 100%;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: -6rem/100;
+                    top: 0;
+                    width: 6rem/100;
+                    height: 100%;
+                    background-image: url(../images/nav-linebg.png);
+                    background-size: 6rem/100 40rem/100;
+                }
             }
         }
     }
@@ -262,13 +271,9 @@ html {
 }
 // 盒子内容结构
 .box-content {
+    position: relative;
     width: 100%;
     background-color: #fff;
-
-    a {
-        color: #333;
-        font-size: 14rem/100;
-    }
     
     h3 {
         margin-bottom: 0;
@@ -276,32 +281,30 @@ html {
 }
 // 盒子内容-两列
 .box-list-2() {
-    width: 100%;
     border-bottom: 1px solid #f7f7f7;
 
-    ul {
-        .clearfix();
-    }
-
     li {
-        float: left;
-        width: 49.9%;
-        padding-right: 0.1%;
+        display: inline-block;
+        width: 49.5%;
+        vertical-align: top;
+
+        a {
+            height: 104rem/100;
+        }
     }
 }
 // 盒子内容-三列
-.box-list-3() { 
-    width: 100%;
+.box-list-3() {
     border-bottom: 1px solid #f7f7f7;
 
-    ul {
-        .clearfix();
-    }
-
     li {
-        float: left;
-        width: 33%;
-        padding-right: 0.3%;
+        display: inline-block;
+        width: 32.7%;
+        vertical-align: top;
+
+        a {
+            height: 165rem/100;
+        }
     }
     
 }
@@ -326,8 +329,12 @@ html {
         position: relative;
         display: block;
         width: 100%;
-        background-size: 100%;
+        font-size: 12rem/100;
+        line-height: 26rem/100;
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
+        color: #333;
 
         &:after {
             content: "";
@@ -345,6 +352,8 @@ html {
         top: 0;
         left: 0;
         z-index: 3;
+        color: #fff;
+        padding: 0 12rem/100;
     }
 
     .c-rt {
@@ -352,6 +361,7 @@ html {
         top: 0;
         right: 0;
         z-index: 3;
+        color: #fff;
 
         i {
             display: block;
@@ -365,6 +375,8 @@ html {
         bottom: 0;
         left: 0;
         z-index: 3;
+        color: #fff;
+        padding: 0 12rem/100;
     }
 
     .c-rb {
@@ -374,7 +386,6 @@ html {
         z-index: 3;
         color: #fff;
         padding: 0 12rem/100;
-        line-height: 26rem/100;
     }
 
     .c-lrb {
@@ -383,6 +394,8 @@ html {
         right: 0;
         bottom: 0;
         z-index: 2;
+        color: #fff;
+        padding: 0 12rem/100;
     }
 
     .title {
@@ -396,11 +409,28 @@ html {
             font-size: 14rem/100;
             font-weight: 400;
             margin-bottom: 6rem/100;
+            // 设置超出隐藏
+            overflow: hidden;
+            // 设置超出显示省略号
+            text-overflow: ellipsis;
+            //将对象作为弹性伸缩盒子模型显示
+            display: -webkit-box;
+            //  设置文本显示两行
+            -webkit-line-clamp: 2;
+            //从上到下排列子元素 
+ 	        -webkit-box-orient: vertical;
         }
 
         p {
             font-size: 12rem/100;
             color: #999;
+            padding-bottom: 8rem/100;
+            // 设置不换行
+            white-space: nowrap;
+            // 设置超出隐藏
+            overflow: hidden;
+            // 设置超出显示省略号
+            text-overflow: ellipsis;
         }
     }
 }
@@ -424,6 +454,36 @@ html {
 .c-icon-Pay {
     .icon-bg();
     background-position: -80rem/100 -20rem/100;
+}
+// 专题
+.c-icon-zt {
+    .icon-bg();
+    background-position: 0 -20rem/100;
+}
+// 查看更多-一列
+.box-more-1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f7f7f7;
+
+    div {
+        width: 100%;
+        height: 50rem/100;
+    }
+
+    a {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        line-height: 50rem/100;
+        font-size: 14rem/100;
+        color: #0bbe06;
+
+        i {
+            padding-right: 8rem/100;
+        }
+    }
 }
 // 查看更多-两列
 .box-more-2 {
@@ -459,10 +519,6 @@ html {
     .box-list-2();
 
     li {
-        a {
-            height: 104rem/100;
-        }
-
         &:nth-child(1) a {
             background-image: url(../upload/pic-list_1.jpg);
         }
@@ -475,10 +531,6 @@ html {
         &:nth-child(4) a {
             background-image: url(../upload/pic-list_4.jpg);
         }
-    }
-
-    .title {
-        padding-bottom: 16rem/100;
     }
 }
 // 今日资讯
@@ -495,6 +547,7 @@ html {
         display: block;
         position: relative;
         padding: 0 20rem/100 16rem/100 38rem/100;
+        color: #333;
 
         &:after {
             content: "";
@@ -509,10 +562,6 @@ html {
     }
 
     li {
-        a {
-            height: 104rem/100;
-        }
-
         &:nth-child(1) a {
             background-image: url(../upload/infor_1.jpg);
         }
@@ -533,10 +582,6 @@ html {
     }
 
     li {
-        a {
-            height: 165rem/100;
-        }
-
         &:nth-child(1) a {
             background-image: url(../upload/tvplay_1.webp);
         }
@@ -573,13 +618,8 @@ html {
     }
 
     li {
-        a {
-            height: 165rem/100;
-        }
-
         .c-rb {
             color: #ff6e0d;
-            font-size: 12rem/100;
         }
 
         &:nth-child(1) a {
@@ -604,6 +644,214 @@ html {
 
         &:nth-child(6) a {
             background-image: url(../upload/film_6.webp);
+        }
+    }
+}
+// 动漫
+.comic {
+    width: 100%;
+    background-color: #fff;
+    .box-list-3();
+
+    .box-title i {
+        background-position: -72rem/100 0;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/comic_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/comic_2.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/comic_3.webp);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/comic_4.webp);
+        }
+
+        &:nth-child(5) a {
+            background-image: url(../upload/comic_5.webp);
+        }
+
+        &:nth-child(6) a {
+            background-image: url(../upload/comic_6.webp);
+        }
+    }
+}
+// 综艺
+.variety {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -96rem/100 0;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/variety_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/variety_2.jpg);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/variety_3.webp);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/variety_4.webp);
+        }
+
+        &:nth-child(5) a {
+            background-image: url(../upload/variety_5.jpg);
+        }
+
+        &:nth-child(6) a {
+            background-image: url(../upload/variety_6.jpg);
+        }
+    }
+}
+// 娱乐
+.happy {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -120rem/100 0;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/happy_1.gif);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/happy_2.png);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/happy_3.png);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/happy_4.png);
+        }
+    }
+}
+// 直播
+.live {
+    width: 100%;
+    background-color: #fff;
+    .box-list-3();
+
+    .box-title i {
+        background-position: -96rem/100 -96rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/live_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/live_2.jpg);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/live_3.jpg);
+        }
+    }
+}
+// 原创
+.original {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: 0 -24rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/original_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/original_2.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/original_3.jpg);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/original_4.webp);
+        }
+
+        &:nth-child(5) a {
+            background-image: url(../upload/original_5.jpg);
+        }
+
+        &:nth-child(6) a {
+            background-image: url(../upload/original_6.webp);
+        }
+    }
+}
+// 纳逗
+.nadou {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: 0 -24rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/nadou_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/nadou_2.webp);
+        }
+    }
+}
+// 游戏
+.game {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: 0 -24rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/game_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/game_2.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/game_3.webp);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/game_4.webp);
         }
     }
 }
