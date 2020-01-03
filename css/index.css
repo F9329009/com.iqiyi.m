@@ -740,3 +740,169 @@ html {
 .game li:nth-child(4) a {
   background-image: url(../upload/game_4.webp);
 }
+.children {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #f7f7f7;
+}
+.children li {
+  display: inline-block;
+  width: 49.5%;
+  vertical-align: top;
+}
+.children li a {
+  height: 1.04rem;
+}
+.children .box-title {
+  position: relative;
+}
+.children .box-title i {
+  background-position: -0.72rem -0.24rem;
+}
+.children .box-title .c-glyphicon-arrowRight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 0.14rem;
+  color: #999;
+  line-height: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  padding-right: 0.24rem;
+}
+.children .box-title .c-glyphicon-arrowRight:before {
+  position: absolute;
+  top: 0;
+  right: 0.06rem;
+}
+.children li:nth-child(1) a {
+  background-image: url(../upload/children_1.webp);
+}
+.children li:nth-child(2) a {
+  background-image: url(../upload/children_2.webp);
+}
+.children li:nth-child(3) a {
+  background-image: url(../upload/children_3.webp);
+}
+.children li:nth-child(4) a {
+  background-image: url(../upload/children_4.webp);
+}
+.baby {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #f7f7f7;
+}
+.baby li {
+  display: inline-block;
+  width: 49.5%;
+  vertical-align: top;
+}
+.baby li a {
+  height: 1.04rem;
+}
+.baby .box-title i {
+  background-position: -0.96rem -0.24rem;
+}
+.baby li:nth-child(1) a {
+  background-image: url(../upload/baby_1.webp);
+}
+.baby li:nth-child(2) a {
+  background-image: url(../upload/baby_2.webp);
+}
+.baby li:nth-child(3) a {
+  background-image: url(../upload/baby_3.webp);
+}
+.baby li:nth-child(4) a {
+  background-image: url(../upload/baby_4.webp);
+}
+.teach {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #f7f7f7;
+}
+.teach li {
+  display: inline-block;
+  width: 49.5%;
+  vertical-align: top;
+}
+.teach li a {
+  height: 1.04rem;
+}
+.teach .box-title i {
+  background-position: -1.2rem -0.24rem;
+}
+.teach li:nth-child(1) a {
+  background-image: url(../upload/teach_1.jpg);
+}
+.teach li:nth-child(2) a {
+  background-image: url(../upload/teach_2.webp);
+}
+.teach li:nth-child(3) a {
+  background-image: url(../upload/teach_3.webp);
+}
+.teach li:nth-child(4) a {
+  background-image: url(../upload/teach_4.webp);
+}
+.record {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #f7f7f7;
+}
+.record li {
+  display: inline-block;
+  width: 32.7%;
+  vertical-align: top;
+}
+.record li a {
+  height: 1.65rem;
+}
+.record .box-title i {
+  background-position: 0 -0.48rem;
+}
+.record li:nth-child(1) a {
+  background-image: url(../upload/record_1.webp);
+}
+.record li:nth-child(2) a {
+  background-image: url(../upload/record_2.webp);
+}
+.record li:nth-child(3) a {
+  background-image: url(../upload/record_3.jpg);
+}
+.record li:nth-child(4) a {
+  background-image: url(../upload/record_4.webp);
+}
+.record li:nth-child(5) a {
+  background-image: url(../upload/record_5.webp);
+}
+.record li:nth-child(6) a {
+  background-image: url(../upload/record_6.webp);
+}
+.life {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #f7f7f7;
+}
+.life li {
+  display: inline-block;
+  width: 49.5%;
+  vertical-align: top;
+}
+.life li a {
+  height: 1.04rem;
+}
+.life .box-title i {
+  background-position: -0.24rem -0.48rem;
+}
+.life li:nth-child(1) a {
+  background-image: url(../upload/life_1.webp);
+}
+.life li:nth-child(2) a {
+  background-image: url(../upload/life_2.jpg);
+}
+.life li:nth-child(3) a {
+  background-image: url(../upload/life_3.jpg);
+}
+.life li:nth-child(4) a {
+  background-image: url(../upload/life_4.webp);
+}
