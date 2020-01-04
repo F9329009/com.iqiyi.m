@@ -86,6 +86,7 @@ html {
 
     ul {
         box-sizing: border-box;
+        height: 40rem/100;
 
         li {
             display: inline-block;
@@ -121,7 +122,7 @@ html {
         top: 44rem/100;
         right: 0;
         width: 40rem/100;
-        height: 41rem/100;
+        height: 40rem/100;
         border-bottom: 1px solid #e6e6e6;
         
         a {
@@ -154,7 +155,7 @@ html {
     }
 }
 
-.hearch {
+.search {
     position: fixed;
     top: 84rem/100;
     left: 0;
@@ -203,15 +204,8 @@ html {
 
 .app {
     width: 100%;
-    height: 10000px;
     padding-top: 126rem/100;
     background-color: #ccc;
-    // 轮播图
-    .carousel {
-        width: 100%;
-        height: 182rem/100;
-        background-color: #aaa;
-    }
     // 广告
     .ad {
         display: block;
@@ -509,6 +503,91 @@ html {
 
         i {
             padding-right: 8rem/100;
+        }
+    }
+}
+// 轮播图
+.carousel {
+    width: 100%;
+    height: 182rem/100;
+    background-color: #fff;
+    padding: 10rem/100 0;
+    overflow: hidden;
+
+    // /* 禁止文本换行 */
+    // white-space: nowrap;
+    // /* 裁剪内容 - 提供滚动机制 */
+    // overflow-x: scroll;
+
+    ul {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        white-space: nowrap;
+        background-color: #fff;
+
+        li {
+            // position: absolute;
+            display: inline-block;
+            width: 88%;
+            height: 100%;
+
+            transform: scale(0.9);
+
+            // padding: 5rem/100 2.5rem/100;
+
+            position: absolute;
+            transition-duration: 400ms;
+            visibility: visible;
+        }
+
+        @c_scale: 0.98;
+
+        .box-list-1 {
+            transform: translateX(0.22rem) scale(1.04);
+
+            a {
+                background-image: url(../upload/carousel_1.jpg);
+            }
+        }
+        .box-list-2 {
+            transform: translateX(362.5rem/100) scale(@c_scale);
+
+            a {
+                background-image: url(../upload/carousel_2.jpg);
+            }
+        }
+        .box-list-3 {
+            transform: translateX(692.5rem/100) scale(@c_scale);
+            a {
+                background-image: url(../upload/carousel_3.jpg);
+            }
+        }
+        .box-list-4 {
+            transform: translateX(-647.5rem/100) scale(@c_scale);
+            a {
+                background-image: url(../upload/carousel_4.jpg);
+            }
+        }
+        .box-list-5 {
+            transform: translateX(-317.5rem/100) scale(@c_scale);
+            a {
+                background-image: url(../upload/carousel_5.jpg);
+            }
+        }
+        
+    }
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 5rem/100;
+
+        &:after {
+            content: "";
+            border-radius: 5rem/100;
         }
     }
 }
@@ -1025,4 +1104,322 @@ html {
             background-image: url(../upload/life_4.webp);
         }
     }
+}
+// 健康
+.health {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -48rem/100 -48rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/health_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/health_2.jpg);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/health_3.jpg);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/health_4.jpg);
+        }
+    }
+}
+// 体育
+.sports {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -72rem/100 -48rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/sports_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/sports_2.jpg);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/sports_3.jpg);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/sports_4.jpg);
+        }
+    }
+}
+// 时尚
+.vogue {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -96rem/100 -48rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/vogue_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/vogue_2.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/vogue_3.webp);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/vogue_4.webp);
+        }
+    }
+}
+// 搞笑
+.funny {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -120rem/100 -48rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/funny_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/funny_2.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/funny_3.jpg);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/funny_4.jpg);
+        }
+    }
+}
+// 片花
+.vflower {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: 0 -72rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/vflower_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/vflower_2.webp);
+        }
+    }
+}
+// 音乐
+.music {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -24rem/100 -72rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/music_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/music_2.jpg);
+        }
+    }
+}
+// 旅游
+.tour {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -48rem/100 -72rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/tour_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/tour_2.webp);
+        }
+    }
+}
+// 军事
+.military {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -72rem/100 -72rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/military_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/military_2.jpg);
+        }
+    }
+}
+// 财经
+.finance {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -96rem/100 -72rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/finance_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/finance_2.webp);
+        }
+    }
+}
+// 汽车
+.car {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: -120rem/100 -72rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/car_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/car_2.webp);
+        }
+    }
+}
+// 科技
+.technology {
+    width: 100%;
+    background-color: #fff;
+    .box-list-2();
+
+    .box-title i {
+        background-position: 0 -96rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/technology_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/technology_2.webp);
+        }
+    }
+}
+// 应用推荐
+.reclist {
+    width: 100%;
+    background-color: #fff;
+
+    .box-title i {
+        background-position: -24rem/100 -96rem/100;
+    }
+
+    ul {
+        display: flex;
+        padding: 0 12rem/100 5rem/100;
+        text-align: center;
+    }
+
+    li {
+        flex: 1;
+        padding: 5rem/100;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 10rem/100;
+    }
+
+    h3 {
+        font-size: 14rem/100;
+        font-weight: 400;
+    }
+}
+// 底部logo
+.footer {
+    text-align: center;
+    padding: 15rem/100 0;
+    background-color: #fff;
+
+    img {
+        width: 100rem/100;
+    }
+}
+// top
+.top {
+    position: fixed;
+    right: 6rem/100;
+    bottom: 80rem/100;
+    display: block;
+    width: 45rem/100;
+    height: 45rem/100;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 10;
+
+    i {
+        font-size: 18rem/100;
+        font-weight: 700;
+        padding-top: 6rem/100;
+    }
+
+    span {
+        display: block;
+        font-size: 12rem/100;
+    }
+
 }
