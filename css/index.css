@@ -44,7 +44,6 @@
 .app {
   width: 100%;
   padding-top: 1.26rem;
-  background-color: #f7f7f7;
 }
 .app .ad {
   display: block;
@@ -1121,14 +1120,6 @@
 .reclist h3 {
   font-size: 0.14rem;
   font-weight: 400;
-}
-.footer {
-  text-align: center;
-  padding: 0.15rem 0;
-  background-color: #fff;
-}
-.footer img {
-  width: 1rem;
 }
 .top {
   position: fixed;

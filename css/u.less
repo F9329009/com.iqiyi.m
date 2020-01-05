@@ -37,7 +37,7 @@
     .c-viptennis-icon();
     background-position: -50rem/100 0;
 }
-
+// 用户信息
 .my-user-card {
     width: 100%;
     height: 90rem/100;
@@ -155,4 +155,320 @@
             color: #00c13b;
         }
     }
+}
+
+// 盒子标题
+.box-title {
+    width: 100%;
+    height: 50rem/100;
+    position: relative;
+    border-top: 1px solid #f0f0f0;
+    
+    a {
+        display: block;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 12rem/100;
+        color: #333;
+        background-color: #fff;
+
+        h3 {
+        font-size: 15rem/100;
+        line-height: 50rem/100;
+        padding-left: 28rem/100;
+        font-weight: 400;
+        }
+
+        i {
+            position: absolute;
+            top: 14rem/100;
+            left: 10rem/100;
+            width: 20rem/100;
+            height: 20rem/100;
+            background-image: url(../images/c-myicon.png);
+            background-size: 480rem/100/3 240rem/100/3;
+        }
+    }
+    
+    .c-glyphicon-arrowRight {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: right;
+        font-size: 14rem/100;
+        color: #999;
+        line-height: 50rem/100;
+        background-color: rgba(0,0,0,0);
+        padding-right: 24rem/100;
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 6rem/100;
+        }
+    }
+}
+// 盒子内容结构
+.box-content {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    
+    white-space: nowrap;
+    overflow-x: scroll;
+
+    li {
+        padding-left: 10rem/100;
+        display: inline-block;
+        width: 105rem/100;
+        font-size: 0;
+        vertical-align: top;
+        border-right-color: red;
+        a {
+            display: block;
+            height: 60rem/100;
+        }
+    }
+    
+    h3 {
+        margin-bottom: 0;
+    }
+}
+// 视频列表的小图标
+.box-list {
+    >li {
+    background-color: #fff;
+    }
+
+    a {
+        position: relative;
+        display: block;
+        width: 100%;
+        font-size: 12rem/100;
+        line-height: 26rem/100;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #333;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40rem/100;
+            background-image: linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0));
+        }
+    }
+
+    .c-lt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        color: #fff;
+        padding: 0 12rem/100;
+    }
+
+    .c-rt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        color: #fff;
+
+        i {
+            display: block;
+            width: 40rem/100;
+            height: 20rem/100;
+        }
+    }
+
+    .c-lb {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        color: #fff;
+        padding: 0 12rem/100;
+    }
+
+    .c-rb {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        color: #fff;
+        padding: 0 12rem/100;
+    }
+
+    .c-lrb {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        color: #fff;
+        padding: 0 12rem/100;
+    }
+
+    .title {
+        width: 100%;
+        padding: 8rem/100 12rem/100;
+        padding-right: 0;
+        box-sizing: border-box;
+        background-color: #fff;
+
+        h3 {
+            font-size: 14rem/100;
+            font-weight: 400;
+            margin-bottom: 6rem/100;
+            white-space: normal;
+            // 设置超出隐藏
+            overflow: hidden;
+            // 设置超出显示省略号
+            text-overflow: ellipsis;
+            //将对象作为弹性伸缩盒子模型显示
+            display: -webkit-box;
+            //  设置文本显示两行
+            -webkit-line-clamp: 2;
+            //从上到下排列子元素 
+ 	        -webkit-box-orient: vertical;
+        }
+
+        p {
+            font-size: 12rem/100;
+            color: #999;
+            padding-bottom: 8rem/100;
+            // 设置不换行
+            white-space: nowrap;
+            // 设置超出隐藏
+            overflow: hidden;
+            // 设置超出显示省略号
+            text-overflow: ellipsis;
+        }
+    }
+}
+.box-border {
+    margin-top: 8rem/100;
+
+    >div:nth-child(1) .box-title {
+        border-top: none;
+    }
+}
+// 播放记录
+.play-record {
+    width: 100%;
+    background-color: #fff;
+
+    .box-title i {
+        background-position: -20rem/100 0;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/playrecord_1.jpg);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/playrecord_2.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/playrecord_3.webp);
+        }
+        
+        &:nth-child(4) a {
+            background-image: url(../upload/playrecord_4.webp);
+        }
+    }
+}
+// 点赞记录
+.praise-record {
+    width: 100%;
+    background-color: #fff;
+
+    .box-title i {
+        background-position: -120rem/100 -40rem/100;
+    }
+
+    li {
+        &:nth-child(1) a {
+            background-image: url(../upload/praiseecord_1.jpg);
+        }
+    }
+}
+// 收藏
+.collect {
+    width: 100%;
+    background-color: #fff;
+
+    .box-title i {
+        background-position: -40rem/100 0;
+    }
+}
+// 关注
+.follow {
+    width: 100%;
+    background-color: #fff;
+
+    .box-title i {
+        background-position: -60rem/100 0;
+    }
+}
+// 第二栏
+.box-list-2 {
+    div {
+        width: 100%;
+        background-color: #fff;
+    }
+    // 我的账号
+    div:nth-child(1) i {
+        background-position: -80rem/100 0;
+    }
+    // 免流量追剧
+    div:nth-child(2) i {
+        background-position: -100rem/100 0;
+    }
+    // 借钱
+    div:nth-child(3) i {
+        background-position: -20rem/100 -60rem/100;
+    }
+    // 办信用卡
+    div:nth-child(4) i {
+        background-position: -140rem/100 -40rem/100;
+    }
+    // 安全中心
+    div:nth-child(5) i {
+        background-position: -120rem/100 0;
+    }
+    // 隐私设置
+    div:nth-child(6) i {
+        background-position: -100rem/100 -40rem/100;
+    }
+    
+}
+// 第三栏
+.box-list-3 {
+    div {
+        width: 100%;
+        background-color: #fff;
+    }
+    // 意见反馈
+    div:nth-child(1) i {
+        background-position: 0 -60rem/100;
+    }    
+}
+// 第四栏
+.box-list-4 {
+    div {
+        width: 100%;
+        background-color: #fff;
+    }
+    // 关于我们
+    div:nth-child(1) i {
+        background-position: -140rem/100 0;
+    }    
 }
