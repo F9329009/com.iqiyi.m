@@ -1,0 +1,158 @@
+.header-top,
+.header-nav {
+    position: relative;
+    top: 0;
+}
+
+.app {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.my-body {
+    width: 100%;
+}
+// VIP精灵图
+.c-usergrade-icon {
+    background-image: url(../images/vip-grade-icon.png);
+    background-size: 576rem/100/3 144rem/100/3;
+
+}
+// VIP5
+.c-vip-usergrade-5 {
+    background-position: -120rem/100 -24rem/100;
+}
+// VIP会员精灵图
+.c-viptennis-icon() {
+    background-image: url(../images/viptennis-icon.png);
+    background-size: 450rem/100/3 210rem/100/3;
+}
+// VIP会员1
+.c-viptennis-icon-1 {
+    .c-viptennis-icon();
+    background-position: 0 0;
+}
+// VIP会员2
+.c-viptennis-icon-2 {
+    .c-viptennis-icon();
+    background-position: -50rem/100 0;
+}
+
+.my-user-card {
+    width: 100%;
+    height: 90rem/100;
+    background-color: #fff;
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15rem/100 0;
+    }
+
+    .my-user-card-cont {
+        display: inline-block;
+        padding: 8rem/100 0;
+    }
+
+    img {
+        display: inline-block;
+        width: 60rem/100;
+        height: 60rem/100;
+        margin-left: 12rem/100;
+        margin-right: 15rem/100;
+        background-image: url(../upload/user_img.jpg);
+        background-size: 100%;
+        border-radius: 50%;
+    }
+
+    span {
+        display: block;
+        width: 100%;
+        font-size: 15rem/100;
+        color: #333;
+    }
+
+    i {
+        display: inline-block;
+        width: 24rem/100;
+        height: 24rem/100;
+    }
+}
+
+.my-user-cont {
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    background-color: #fff;
+
+    ul {
+        padding-bottom: 12rem/100;
+    }
+
+    li {
+        display: inline-block;
+        padding-left: 12rem/100;
+    }
+
+    a {
+        display: block;
+        border: 1px solid #f1f1f1;
+        border-radius: 30rem/100;
+
+        >span {
+            display: inline-block;
+            vertical-align: top;
+            width: 54rem/100;
+            line-height: 28rem/100;
+            margin: 11rem/100 10rem/100 0 8rem/100;
+            padding: 0 14rem/100;
+            border-radius: 14rem/100;
+            box-sizing: border-box;
+            color: #fff;
+        }
+    }
+
+    i {
+        display: inline-block;
+        width: 50rem/100;
+        height: 50rem/100;
+    }
+
+    div {
+        display: inline-block;
+        vertical-align: top;
+
+        .c-title {
+            display: block;
+            font-size: 15rem/100;
+            line-height: 32rem/100;
+        }
+
+        .c-info {
+            display: block;
+            font-size: 12rem/100;
+            color: #999;
+        }
+    }
+
+    li:nth-child(1) {
+        a>span {
+            background-color: #dab176;
+        }
+
+        .c-title {
+            color: #c8a06a;
+        }
+    }
+
+    li:nth-child(2) {
+        a>span {
+            background-color: #00d440;
+        }
+
+        .c-title {
+            color: #00c13b;
+        }
+    }
+}

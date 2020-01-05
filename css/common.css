@@ -1,3 +1,14 @@
+html {
+    font-size: 100px;
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 26.66666667vw;
+    }
+}
+
+
 /* 清除浮动 */
 .clearfix:after,
 .clearfix:before {

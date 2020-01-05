@@ -1,0 +1,125 @@
+.header-top,
+.header-nav {
+  position: relative;
+  top: 0;
+}
+.app {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.my-body {
+  width: 100%;
+}
+.c-usergrade-icon {
+  background-image: url(../images/vip-grade-icon.png);
+  background-size: 1.92rem 0.48rem;
+}
+.c-vip-usergrade-5 {
+  background-position: -1.2rem -0.24rem;
+}
+.c-viptennis-icon-1 {
+  background-image: url(../images/viptennis-icon.png);
+  background-size: 1.5rem 0.7rem;
+  background-position: 0 0;
+}
+.c-viptennis-icon-2 {
+  background-image: url(../images/viptennis-icon.png);
+  background-size: 1.5rem 0.7rem;
+  background-position: -0.5rem 0;
+}
+.my-user-card {
+  width: 100%;
+  height: 0.9rem;
+  background-color: #fff;
+}
+.my-user-card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.15rem 0;
+}
+.my-user-card .my-user-card-cont {
+  display: inline-block;
+  padding: 0.08rem 0;
+}
+.my-user-card img {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-left: 0.12rem;
+  margin-right: 0.15rem;
+  background-image: url(../upload/user_img.jpg);
+  background-size: 100%;
+  border-radius: 50%;
+}
+.my-user-card span {
+  display: block;
+  width: 100%;
+  font-size: 0.15rem;
+  color: #333;
+}
+.my-user-card i {
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+}
+.my-user-cont {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  background-color: #fff;
+}
+.my-user-cont ul {
+  padding-bottom: 0.12rem;
+}
+.my-user-cont li {
+  display: inline-block;
+  padding-left: 0.12rem;
+}
+.my-user-cont a {
+  display: block;
+  border: 1px solid #f1f1f1;
+  border-radius: 0.3rem;
+}
+.my-user-cont a > span {
+  display: inline-block;
+  vertical-align: top;
+  width: 0.54rem;
+  line-height: 0.28rem;
+  margin: 0.11rem 0.1rem 0 0.08rem;
+  padding: 0 0.14rem;
+  border-radius: 0.14rem;
+  box-sizing: border-box;
+  color: #fff;
+}
+.my-user-cont i {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.my-user-cont div {
+  display: inline-block;
+  vertical-align: top;
+}
+.my-user-cont div .c-title {
+  display: block;
+  font-size: 0.15rem;
+  line-height: 0.32rem;
+}
+.my-user-cont div .c-info {
+  display: block;
+  font-size: 0.12rem;
+  color: #999;
+}
+.my-user-cont li:nth-child(1) a > span {
+  background-color: #dab176;
+}
+.my-user-cont li:nth-child(1) .c-title {
+  color: #c8a06a;
+}
+.my-user-cont li:nth-child(2) a > span {
+  background-color: #00d440;
+}
+.my-user-cont li:nth-child(2) .c-title {
+  color: #00c13b;
+}
