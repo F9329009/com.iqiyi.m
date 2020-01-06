@@ -1,7 +1,6 @@
 .app {
     width: 100%;
     padding-top: 44rem/100;
-
 }
 // VIP会员精灵图
 .c-myicon-icon() {
@@ -12,6 +11,127 @@
 .c-myicon-suo {
     .c-myicon-icon();
     background-position: 0 -40rem/100;
+}
+// 视频列表的小图标
+.box-list {
+    >li {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    a {
+        position: relative;
+        display: inline-block;
+        width: 105rem/100;
+        font-size: 12rem/100;
+        // line-height: 26rem/100;
+        line-height: 16rem/100;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #333;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40rem/100;
+            background-image: linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0));
+        }
+    }
+
+    .c-lt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        color: #fff;
+        padding: 0 12rem/100;
+    }
+
+    .c-rt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        color: #fff;
+
+        i {
+            display: block;
+            width: 40rem/100;
+            height: 20rem/100;
+        }
+    }
+
+    .c-lb {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        color: #fff;
+        padding: 0 12rem/100;
+    }
+
+    .c-rb {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        color: #fff;
+        // padding: 0 12rem/100;
+        padding: 0 6rem/100;
+    }
+
+    .c-lrb {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        color: #fff;
+        padding: 0 12rem/100;
+    }
+
+    .title {
+        display: inline-block;
+        width: 100%;
+        // padding: 8rem/100 12rem/100;
+        padding-left: 10rem/100;
+        padding-right: 0;
+        box-sizing: border-box;
+        background-color: #fff;
+
+        h3 {
+            font-size: 14rem/100;
+            font-weight: 400;
+            margin-bottom: 6rem/100;
+            white-space: normal;
+            // 设置超出隐藏
+            overflow: hidden;
+            // 设置超出显示省略号
+            text-overflow: ellipsis;
+            //将对象作为弹性伸缩盒子模型显示
+            display: -webkit-box;
+            //  设置文本显示两行
+            -webkit-line-clamp: 2;
+            //从上到下排列子元素 
+ 	        -webkit-box-orient: vertical;
+        }
+
+        p {
+            font-size: 12rem/100;
+            color: #999;
+            padding-bottom: 8rem/100;
+            // 设置不换行
+            white-space: nowrap;
+            // 设置超出隐藏
+            overflow: hidden;
+            // 设置超出显示省略号
+            text-overflow: ellipsis;
+        }
+    }
 }
 // 标题
 .title {
@@ -99,6 +219,184 @@
             line-height: 50rem/100;
             font-size: 13rem/100;
         }
+    }
+}
+// 盒子标题
+.box-title {
+    width: 100%;
+    height: 50rem/100;
+    position: relative;
+    // border-top: 1px solid #f0f0f0;
+    
+    h3 {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 12rem/100;
+        color: #333;
+        background-color: #fff;
+        font-size: 15rem/100;
+        line-height: 50rem/100;
+        // padding-left: 28rem/100;
+        font-weight: 400;
+        }
+}
+// 盒子内容结构
+.box-content {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    
+    // white-space: nowrap;
+    // overflow-x: scroll;
+
+    li {
+        padding-left: 10rem/100;
+        display: flex;
+        width: 100%;
+        font-size: 0;
+        vertical-align: top;
+        border-right-color: red;
+        box-sizing: border-box;
+        padding: 15rem/100 12rem/100;
+
+        a {
+            vertical-align: top;
+            height: 60rem/100;
+        }
+    }
+    .title {
+        display: inline-block;
+        flex: 1;
+
+        h3 {
+            margin-bottom: 4rem/100;
+            height: 34rem/100;
+        }
+    
+        i {
+            font-size: 14rem/100;
+        }
+    }
+}
+// 播放记录
+.playrecord {
+    width: 100%;
+    background-color: #fff;
+
+    .box-title i {
+        background-position: -20rem/100 0;
+    }
+
+    .box-list-day li {
+        &:nth-child(1) a {
+            background-image: url(../upload/record_play_1.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/record_play_2.jpg);
+        }
+
+    }
+
+    .box-list-week li {
+        &:nth-child(1) a {
+            background-image: url(../upload/record_play_3.jpg);
+        }
+        
+        &:nth-child(2) a {
+            background-image: url(../upload/record_play_4.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/record_play_5.webp);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/record_play_6.jpg);
+        }
+
+        &:nth-child(5) a {
+            background-image: url(../upload/record_play_7.webp);
+        }
+        
+        &:nth-child(6) a {
+            background-image: url(../upload/record_play_8.webp);
+        }
+
+        &:nth-child(7) a {
+            background-image: url(../upload/record_play_9.jpg);
+        }
+
+        &:nth-child(8) a {
+            background-image: url(../upload/record_play_10.jpg);
+        }
+
+        &:nth-child(9) a {
+            background-image: url(../upload/record_play_11.webp);
+        }
+    }
+
+    .box-list-longer li {
+        &:nth-child(1) a {
+            background-image: url(../upload/record_play_12.webp);
+        }
+
+        &:nth-child(2) a {
+            background-image: url(../upload/record_play_13.webp);
+        }
+
+        &:nth-child(3) a {
+            background-image: url(../upload/record_play_14.webp);
+        }
+
+        &:nth-child(4) a {
+            background-image: url(../upload/record_play_15.webp);
+        }
+        
+        &:nth-child(5) a {
+            background-image: url(../upload/record_play_16.webp);
+        }
+
+        &:nth-child(6) a {
+            background-image: url(../upload/record_play_17.jpg);
+        }
+
+        &:nth-child(7) a {
+            background-image: url(../upload/record_play_18.webp);
+        }
+
+        &:nth-child(8) a {
+            background-image: url(../upload/record_play_19.webp);
+        }
+        
+        &:nth-child(9) a {
+            background-image: url(../upload/record_play_20.webp);
+        }
+    }
+}
+// top
+.top {
+    position: fixed;
+    right: 6rem/100;
+    bottom: 80rem/100;
+    display: block;
+    width: 45rem/100;
+    height: 45rem/100;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 10;
+
+    i {
+        font-size: 18rem/100;
+        font-weight: 700;
+        padding-top: 6rem/100;
+    }
+
+    span {
+        display: block;
+        font-size: 12rem/100;
     }
 
 }
