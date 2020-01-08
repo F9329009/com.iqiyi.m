@@ -1,0 +1,224 @@
+.header-top,
+.header-nav {
+    position: relative;
+    top: 0;
+}
+
+.app {
+    width: 100%;
+    background-color: #fff;
+}
+// 引入精灵图
+.channel-icon() {
+    background-image: url(../images/channel-list.png);
+    background-size: 900rem/100/3 1050rem/100/3;
+}
+
+.box {
+    width: 100%;
+
+    .title {
+        width: 100%;
+        height: 25rem/100;
+        background-color: #f7f7f7;
+
+        h3 {
+            padding-left: 15rem/100;
+            line-height: 25rem/100;
+            font-weight: 400;
+            color: #999;
+        }
+    }
+
+    .list {
+        width: 100%;
+        text-align: center;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    
+        li {
+            width: 33.333%;
+            margin-top: 11rem/100;
+
+            &:nth-child(6n-2),
+            &:nth-child(6n-1),
+            &:nth-child(6n) {
+                border-bottom: 1px solid #f0f0f0;
+                margin-top: 0;
+            }            
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            height: 88rem/100;
+        }
+
+        i {
+            display: inline-block;
+            width: 50rem/100;
+            height: 50rem/100;
+            .channel-icon();
+        }
+
+        span {
+            display: block;
+            line-height: 25rem/100;
+            font-size: 14rem/100;
+        }
+    }
+
+    .box-film li {
+            &:nth-child(1) i {
+                background-position: 0 0;
+            }
+            
+            &:nth-child(2) i {
+                background-position: -50rem/100 0;
+            }
+            
+            &:nth-child(3) i {
+                background-position: -50rem/100*3 0;
+            }
+            
+            &:nth-child(4) i {
+                background-position: -50rem/100*5 -50rem/100*5;
+            }
+            
+            &:nth-child(5) i {
+                background-position: -50rem/100*2 0;
+            }
+            
+            &:nth-child(6) i {
+                background-position: -50rem/100*4 0;
+            }
+            
+            &:nth-child(7) i {
+                background-position: 0 -50rem/100;
+            }
+            
+            &:nth-child(8) i {
+                background-position: -50rem/100 -50rem/100;
+            }
+            
+            &:nth-child(9) i {
+                background-position: -50rem/100*2 -50rem/100;
+            }
+            
+            &:nth-child(10) i {
+                background-position: -50rem/100*3 -50rem/100;
+            }
+            
+            &:nth-child(11) i {
+                background-position: -50rem/100*4 -50rem/100;
+            }
+            
+            &:nth-child(12) i {
+                background-position: -50rem/100*5 -50rem/100;
+            }
+            
+            &:nth-child(13) i {
+                background-position: -50rem/100*4 -50rem/100*5;
+            }
+            
+            &:nth-child(14) i {
+                background-position: -50rem/100*5 -50rem/100*2;
+            }
+            
+            &:nth-child(15) i {
+                background-position: -50rem/100*5 0;
+            }
+    }
+
+    .box-selected li {
+        &:nth-child(1) i {
+            background-position: 0 -50rem/100*2;
+        }
+        
+        &:nth-child(2) i {
+            background-position: -50rem/100 -50rem/100*2;
+        }
+        
+        &:nth-child(3) i {
+            background-position: -50rem/100*2 -50rem/100*2;
+        }
+        
+        &:nth-child(4) i {
+            background-position: -50rem/100*3 -50rem/100*2;
+        }
+        
+        &:nth-child(5) i {
+            background-position: -50rem/100*4 -50rem/100*2;
+        }
+        
+        &:nth-child(6) i {
+            background-position: 0 -50rem/100*5;
+        }
+        
+        &:nth-child(7) i {
+            background-position: 0 -50rem/100*3;
+        }
+        
+        &:nth-child(8) i {
+            background-position: -50rem/100 -50rem/100*3;
+        }
+        
+        &:nth-child(9) i {
+            background-position: -50rem/100*2 -50rem/100*3;
+        }
+        
+        &:nth-child(10) i {
+            background-position: -50rem/100*3 -50rem/100*3;
+        }
+        
+        &:nth-child(11) i {
+            background-position: -50rem/100*4 -50rem/100*3;
+        }
+        
+        &:nth-child(12) i {
+            background-position: -50rem/100*5 -50rem/100*3;
+        }
+    }
+
+    .box-else li {
+        &:nth-child(1) i {
+            background-position: 0 -50rem/100*4;
+        }
+        
+        &:nth-child(2) i {
+            background-position: -50rem/100 -50rem/100*4;
+        }
+        
+        &:nth-child(3) i {
+            background-position: -50rem/100*2 -50rem/100*4;
+        }
+        
+        &:nth-child(4) i {
+            background-position: -50rem/100*3 -50rem/100*4;
+        }
+        
+        &:nth-child(5) i {
+            background-position: -50rem/100*4 -50rem/100*4;
+        }
+        
+        &:nth-child(6) i {
+            background-position: -50rem/100*5 -50rem/100*4;
+        }
+        
+        &:nth-child(7) i {
+            background-position: 0 -50rem/100;
+        }
+        
+        &:nth-child(8) i {
+            background-position: -50rem/100*2 -50rem/100*5;
+        }
+        
+        &:nth-child(9) i {
+            background-position: -50rem/100*3 -50rem/100*5;
+        }
+    }
+}
