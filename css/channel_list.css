@@ -1,11 +1,12 @@
 .header-top,
 .header-nav {
-  position: relative;
+  position: fixed;
   top: 0;
 }
 .app {
   width: 100%;
   background-color: #fff;
+  padding-top: 0.44rem;
 }
 .box {
   width: 100%;
