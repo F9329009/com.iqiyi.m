@@ -57,6 +57,7 @@
   display: block;
   line-height: 0.25rem;
   font-size: 0.14rem;
+  color: #666;
 }
 .box .box-film li:nth-child(1) i {
   background-position: 0 0;

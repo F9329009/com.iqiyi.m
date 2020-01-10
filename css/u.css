@@ -262,7 +262,7 @@
 }
 .box-list .title {
   width: 100%;
-  padding: 0.08rem 0.12rem;
+  padding: 0.08rem 0;
   padding-right: 0;
   box-sizing: border-box;
   background-color: #fff;
